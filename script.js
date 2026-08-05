@@ -29,3 +29,35 @@ const observer = new IntersectionObserver(entries => {
 }, { threshold: 0.12 });
 
 reveals.forEach(item => observer.observe(item));
+
+
+const brevoForm = document.getElementById('sib-form');
+
+if (brevoForm) {
+  brevoForm.addEventListener('submit', () => {
+    const button = brevoForm.querySelector('.optin-button');
+    const success = document.getElementById('success-message');
+    const error = document.getElementById('error-message');
+    const email = brevoForm.querySelector('#EMAIL');
+
+    if (!email || !email.checkValidity()) {
+      return;
+    }
+
+    if (error) error.style.display = 'none';
+
+    if (button) {
+      button.disabled = true;
+      button.textContent = 'Sending...';
+    }
+
+    window.setTimeout(() => {
+      if (success) success.style.display = 'block';
+      if (button) {
+        button.textContent = '✓ You’re In!';
+        button.disabled = false;
+      }
+      brevoForm.reset();
+    }, 900);
+  });
+}

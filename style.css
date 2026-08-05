@@ -295,3 +295,18 @@ footer{background:linear-gradient(135deg,#0a6031,#034423);color:white}
   .optin-row input{border:1px solid #c8c8c8;box-shadow:0 8px 18px rgba(20,65,40,.07)}
   .optin-button{min-height:52px}
 }
+
+
+.brevo-submit-frame{
+  position:absolute;
+  width:1px;
+  height:1px;
+  border:0;
+  opacity:0;
+  pointer-events:none;
+}
+.optin-button:disabled{
+  opacity:.75;
+  cursor:wait;
+  transform:none;
+}

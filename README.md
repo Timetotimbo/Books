@@ -1,8 +1,8 @@
-# E & E Favor Books
+# E & E Favor Books — Brevo Fixed
 
-This version includes the live Brevo signup form.
+This version fixes the email button so the form submits directly to Brevo.
 
-Upload all six files to the root of the GitHub `Books` repository, replacing the existing versions:
+Upload these files to the root of the GitHub `Books` repository and replace the existing files:
 
 - index.html
 - style.css
@@ -11,4 +11,6 @@ Upload all six files to the root of the GitHub `Books` repository, replacing the
 - fruits-cover-spread.jpeg
 - README.md
 
-Then click **Commit changes**, wait 1–3 minutes, and refresh https://eefavorbooks.com.
+Then click **Commit changes**, wait 1–3 minutes, and hard-refresh the website with `Ctrl + F5`.
+
+Test with an email address, then confirm the contact appears inside Brevo under **CRM → Contacts**.
