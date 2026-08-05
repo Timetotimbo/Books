@@ -15,19 +15,6 @@ document.querySelectorAll('.nav a').forEach(link => {
   });
 });
 
-document.getElementById('signup-form').addEventListener('submit', event => {
-  event.preventDefault();
-  const email = event.currentTarget.querySelector('input').value.trim();
-  const message = document.querySelector('.form-message');
-
-  if (!email) {
-    message.textContent = 'Please enter your email address.';
-    return;
-  }
-
-  message.textContent = 'Thank you for joining the E & E Favor Books family!';
-  event.currentTarget.reset();
-});
 
 document.getElementById('year').textContent = new Date().getFullYear();
 

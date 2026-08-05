@@ -137,19 +137,43 @@
 
     <section class="newsletter" id="freebies">
       <div class="newsletter-copy reveal">
-        <h2>Join Our Family!</h2>
-        <p>
-          Get free coloring pages, fun activities, and be the first to know about new books and special offers.
+        <p class="gift-kicker">🎁 A FREE GIFT FOR YOUR FAMILY</p>
+        <h2>Get FREE Coloring Pages!</h2>
+        <p class="newsletter-lead">
+          Join the E &amp; E Favor Books family for printable coloring pages,
+          fun activities, new book announcements, and special surprises.
         </p>
 
-        <form id="signup-form">
-          <label class="sr-only" for="email">Email address</label>
-          <input id="email" type="email" placeholder="Enter your email" required />
-          <button type="submit">✉ Join Now</button>
+        <div id="error-message" class="sib-form-message-panel brevo-message brevo-error" role="alert">
+          Your subscription could not be saved. Please check your email and try again.
+        </div>
+
+        <div id="success-message" class="sib-form-message-panel brevo-message brevo-success" role="status">
+          Thanks for joining the E &amp; E Favor Books family! Check your email for your free coloring pages.
+        </div>
+
+        <form id="sib-form" class="premium-optin" method="POST"
+              action="https://f5e01321.sibforms.com/serve/MUIFANAqCquO1e1WBxUBE932BZCRSCp3n2M9KHmnUdF0o_7Kq-3sUlNVqW6Nv278oUtR6MtJBmhGct9GjQZJ9DApYQgEXM0ijLl2OAgFe6fZZZHqj-gTXco_rLoECMv6N4XBKNVi2bjBDmGiMBAr76YBgMtyWs-SFCVEw8F3rpkN9WQ8aqy4jSj-wraEIwk915dWnLQNfS-vMnNEAQ=="
+              data-type="subscription">
+          <label class="sr-only" for="EMAIL">Email address</label>
+          <div class="optin-row">
+            <input class="input" id="EMAIL" name="EMAIL" type="email"
+                   autocomplete="email" placeholder="Enter your best email"
+                   data-required="true" required />
+            <button class="optin-button sib-form-block__button sib-form-block__button-with-loader"
+                    type="submit" form="sib-form">
+              <svg class="brevo-loader sib-hide-loader-icon" viewBox="0 0 512 512" aria-hidden="true">
+                <path d="M460.116 373.846l-20.823-12.022c-5.541-3.199-7.54-10.159-4.663-15.874 30.137-59.886 28.343-131.652-5.386-189.946-33.641-58.394-94.896-95.833-161.827-99.676C261.028 55.961 256 50.751 256 44.352V20.309c0-6.904 5.808-12.337 12.703-11.982 83.556 4.306 160.163 50.864 202.11 123.677 42.063 72.696 44.079 162.316 6.031 236.832-3.14 6.148-10.75 8.461-16.728 5.01z"/>
+              </svg>
+              🎁 Get My FREE Pages
+            </button>
+          </div>
+          <label class="entry__error entry__error--primary brevo-field-error"></label>
+          <input type="text" name="email_address_check" value="" class="input--hidden" aria-hidden="true" tabindex="-1">
+          <input type="hidden" name="locale" value="en">
         </form>
 
-        <small>We respect your privacy. Unsubscribe at any time.</small>
-        <p class="form-message" aria-live="polite"></p>
+        <small>We respect your privacy. Unsubscribe anytime.</small>
       </div>
 
       <div class="coloring-card reveal" aria-label="Coloring pages preview">
@@ -211,6 +235,24 @@
     </div>
   </footer>
 
+<script>
+  window.REQUIRED_CODE_ERROR_MESSAGE = 'Please choose a country code';
+  window.LOCALE = 'en';
+  window.EMAIL_INVALID_MESSAGE = window.SMS_INVALID_MESSAGE = 'Please enter a valid email address.';
+  window.REQUIRED_ERROR_MESSAGE = 'Please enter your email address.';
+  window.GENERIC_INVALID_MESSAGE = 'The information provided is invalid. Please review it and try again.';
+  window.INVALID_NUMBER = 'The information provided is invalid. Please review it and try again.';
+  window.INVALID_DATE = 'Please enter a valid date';
+  window.REQUIRED_MULTISELECT_MESSAGE = 'Please select at least one option';
+  window.translation = { common: {
+    selectedList: '{quantity} list selected',
+    selectedLists: '{quantity} lists selected',
+    selectedOption: '{quantity} selected',
+    selectedOptions: '{quantity} selected'
+  }};
+  var AUTOHIDE = Boolean(0);
+</script>
+<script defer src="https://sibforms.com/forms/end-form/build/main.js"></script>
   <script src="script.js"></script>
 </body>
 </html>

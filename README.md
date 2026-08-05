@@ -1,8 +1,8 @@
 # E & E Favor Books
 
-GitHub Pages website files.
+This version includes the live Brevo signup form.
 
-All files belong in the root of the `Books` repository:
+Upload all six files to the root of the GitHub `Books` repository, replacing the existing versions:
 
 - index.html
 - style.css
@@ -10,3 +10,5 @@ All files belong in the root of the `Books` repository:
 - hero-brothers.jpeg
 - fruits-cover-spread.jpeg
 - README.md
+
+Then click **Commit changes**, wait 1–3 minutes, and refresh https://eefavorbooks.com.
