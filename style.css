@@ -216,6 +216,7 @@ footer{background:linear-gradient(135deg,#0a6031,#034423);color:white}
 .footer-brand{font-size:3rem;font-weight:900;color:#ef3840;letter-spacing:-4px}
 .footer-brand span{color:#78ae4f;margin:0 5px}
 .footer-script{font-family:"Pacifico",cursive}
+.footer-grid a.footer-phone{font-weight:700;font-size:.95rem}
 .socials{display:flex;gap:12px;margin-top:7px}
 .socials a{
   width:34px;height:34px;display:grid;place-items:center;
